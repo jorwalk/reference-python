@@ -102,3 +102,22 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+flask-login/myenv/
+flask-login/myenv/bin/activate
+flask-login/myenv/bin/activate.csh
+flask-login/myenv/bin/activate.fish
+flask-login/myenv/bin/activate_this.py
+flask-login/myenv/bin/easy_install
+flask-login/myenv/bin/easy_install-3.7
+flask-login/myenv/bin/flask
+flask-login/myenv/bin/pip
+flask-login/myenv/bin/pip3
+flask-login/myenv/bin/pip3.7
+flask-login/myenv/bin/python
+flask-login/myenv/bin/python-config
+flask-login/myenv/bin/python3
+flask-login/myenv/bin/python3.7
+flask-login/myenv/bin/wheel
+flask-login/myenv/include/python3.7m
+flask-login/myenv/pip-selfcheck.json
+flask-login/myenv/pyvenv.cfg
