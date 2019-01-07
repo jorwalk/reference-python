@@ -1,6 +1,7 @@
 """Flask Login Sample"""
 import flask
 import flask_login
+from flask import render_template
 
 app = flask.Flask(__name__)
 app.secret_key = 'super secret string'  # Change this!
@@ -46,13 +47,14 @@ def request_loader(request):
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if flask.request.method == 'GET':
-        return '''
-               <form action='login' method='POST'>
-                <input type='text' name='email' id='email' placeholder='email'/>
-                <input type='password' name='password' id='password' placeholder='password'/>
-                <input type='submit' name='submit'/>
-               </form>
-               '''
+        return render_template('login.html')
+        # return '''
+        #        <form action='login' method='POST'>
+        #         <input type='text' name='email' id='email' placeholder='email'/>
+        #         <input type='password' name='password' id='password' placeholder='password'/>
+        #         <input type='submit' name='submit'/>
+        #        </form>
+        #        '''
 
     email = flask.request.form['email']
     if flask.request.form['password'] == users[email]['password']:
@@ -86,7 +88,7 @@ def hello():
     return "Hello World!"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0',debug=True)
 
 # from flask import Flask, url_for, render_template, request, redirect, session
 # from flask_sqlalchemy import SQLAlchemy
