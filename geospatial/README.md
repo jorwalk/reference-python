@@ -29,3 +29,26 @@
 - http://www.loicdutrieux.net/landsat-extract-gee/examples.html
 
 - https://rasterio.readthedocs.io/en/stable/topics/plotting.html
+
+- https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+Available+Imagery+Products#expand-CorrectedReflectance16Products
+
+- https://lance-modis.eosdis.nasa.gov/imagery/firemaps/
+
+- https://rabernat.github.io/research_computing_2018/maps-with-cartopy.html
+- http://www.net-analysis.com/blog/cartopylayout.html
+
+docker run --rm -it --name osmnx -p 8888:8888 -v "$PWD":/home/jovyan/work gboeing/osmnx
+
+docker run -ti --name nb --rm -v $(pwd)/notebooks:/notebooks -p 8888:8888 quay.io/occ_data/jupyter-geo
+docker run -p 8888:8888 quay.io/occ_data/jupyter-geo
+
+docker run -it edce81c52e9f --rm -v "$PWD"/notebooks:/notebooks -p 8888:8888
+
+```
+I was inspired today by a NatGeo World Map hanging on a wall.
+
+Using NASA satellite imagery of global active fire detections from MODIS and VIIRS, I created this animation in python showing world fires between 2015 and 2017.
+
+
+#hackersgonnahack #python #nasa #map 
+```
