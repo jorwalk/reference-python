@@ -1,0 +1,4 @@
+- https://semaphoreci.com/community/tutorials/getting-started-with-mocking-in-python
+- https://medium.com/python-pandemonium/python-mocking-you-are-a-tricksy-beast-6c4a1f8d19b2
+- https://bradmontgomery.net/blog/how-world-do-you-mock-name-attribute/
+- https://auth0.com/blog/mocking-api-calls-in-python/
