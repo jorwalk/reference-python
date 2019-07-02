@@ -41,6 +41,6 @@ To stop using a virtual environment, either close the Terminal window or enter 
 ```
 Generate a requirements file and then install from it in another environment.
 ```shell
-$ env1/bin/pip freeze > requirements.txt
+$ `env1/bin/pip freeze > requirements.txt`
 $ env2/bin/pip install -r requirements.txt
 ```
