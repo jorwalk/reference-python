@@ -8,7 +8,7 @@ itsdangerous==1.1.0
 Jinja2==2.10
 MarkupSafe==1.1.0
 monotonic==1.5
-python-engineio==3.1.2
+python-engineio==3.8.2.post1
 python-socketio==3.0.0
 six==1.12.0
 Werkzeug==0.15.3
