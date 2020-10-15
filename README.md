@@ -3,8 +3,8 @@
 Reference frameworks, files, and folders written in Python
 
 ## Flask
-- [Building and Documenting Python REST APIs With Flask and Connexion](flask-connexion/)
 
+- [Building and Documenting Python REST APIs With Flask and Connexion](flask-connexion/)
 
 ## Best Practice - Virtual Environments
 
@@ -14,14 +14,12 @@ It's a best practice to keep all your virtualenvs in one place, for example `.v
 
 ```
 $ mkdir ~/.virtualenvs
-
 ```
 
 Now create a new virtual environment called `myvenv` by running:
 
 ```
 $ python3 -m venv ~/.virtualenvs/myvenv
-
 ```
 
 Because we used `python3` here our virtual environment knows that when we type `python` for a command we mean Python 3 not Python 2. In order to activate this virtual environment, so we can use it, we must also run the following command:
@@ -39,17 +37,22 @@ To stop using a virtual environment, either close the Terminal window or enter 
 (myvenv) $ deactivate
 
 ```
+
 Generate a requirements file and then install from it in another environment.
+
 ```shell
-$ myvenv/bin/pip freeze > requirements.txt
-$ myvenv/bin/pip install -r requirements.txt
+$ ~/.virtualenvs/myvenv/bin/pip freeze > requirements.txt
+$ ~/.virtualenvs/myvenv/bin/pip install -r requirements.txt
 ```
+
 See outdated packages
+
 ```
 python3 -m pip list --outdated --format=columns
 ```
 
 Freeze requirements
+
 ```
 python3 -m venv/bin/pip freeze > requirements.txt
 ```
